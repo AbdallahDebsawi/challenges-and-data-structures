@@ -49,6 +49,21 @@
             return reversedArray;
         }
 
-
+        static int MaximumValue(int[] array)
+        {
+            if (array.Length == 0)
+            {
+                throw new ArgumentException("Array cannot be empty.");
+            }
+            int max = array[0];
+            for (int i = 1; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                {
+                    max = array[i];
+                }
+            }
+            return max;
+        }
     }
 }
