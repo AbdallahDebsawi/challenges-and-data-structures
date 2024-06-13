@@ -19,3 +19,10 @@ Adv-cc 02
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/whiteboard-challenges/Adv-cc%2002/README.md)
 
 ---
+Adv-cc 03
+
+### Challenge 04: Remove Middle Value
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Remove-Middle-Value/challenges-and-data-structures/whiteboard-challenges/Adv-cc%2003/README.md)
+
+---
+
