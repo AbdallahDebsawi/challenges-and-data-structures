@@ -65,5 +65,28 @@
             }
             return max;
         }
+         static int[] RemoveMiddleValue(int[] arr)
+        {
+            int length = arr.Length;
+            if (length == 0)
+            {
+                return arr; // Return the array as is if it's empty
+            }
+
+            int middle = length / 2;
+            int count = (length % 2 == 0) ? 2 : 1;
+
+            int[] result = new int[length - count];
+            for (int i = 0, j = 0; i < length; i++)
+            {
+                if (i != middle && (length % 2 == 0 && i != middle - 1))
+                {
+                    result[j++] = arr[i];
+                }
+            }
+
+            return result;
+        }
+
     }
 }
