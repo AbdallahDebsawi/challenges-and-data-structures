@@ -21,8 +21,13 @@ Adv-cc 02
 ---
 Adv-cc 03
 
-### Challenge 04: Remove Middle Value
+### Challenge 03: Remove Middle Value
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Remove-Middle-Value/challenges-and-data-structures/whiteboard-challenges/Adv-cc%2003/README.md)
 
 ---
+Adv-cc 04
 
+### Challenge 04: Insert Value in Middle of Array
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Insert-Middle-Value/challenges-and-data-structures/whiteboard-challenges/Adv-cc%2004/README.md)
+
+---
