@@ -6,6 +6,27 @@
         {
             Console.WriteLine("Hello, Worl!");
         }
+
+
+        public static int[] MiddleValue(int[] array, int value)
+        {
+            int length = array.Length;
+            int midIndex = length / 2;
+            int[] newArray = new int[length + 1];
+
+            for (int i = 0; i < midIndex; i++)
+            {
+                newArray[i] = array[i];
+            }
+            newArray[midIndex] = value;
+
+            for (int i = midIndex; i < length; i++)
+            {
+                newArray[i + 1] = array[i];
+            }
+            return newArray;
+        }
+
         static int MostFrequentNumber(int[] array)
         {
             if (array == null || array.Length == 0)
