@@ -2,10 +2,10 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, Worl!");
-        }
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Hello, Worl!");
+        //}
 
 
         public static int[] MiddleValue(int[] array, int value)
