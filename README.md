@@ -31,3 +31,9 @@ Adv-cc 04
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Insert-Middle-Value/challenges-and-data-structures/whiteboard-challenges/Adv-cc%2004/README.md)
 
 ---
+Adv-cc 05
+
+### Challenge 05: Find Duplicates in Array
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Challenges/Find-Duplicates/README.md)
+
+---
