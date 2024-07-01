@@ -1,11 +1,16 @@
-﻿namespace challenges_and_data_structures
+﻿using challenges_and_data_structures.Challenges.Common_Elements;
+namespace challenges_and_data_structures
 {
     internal class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    Console.WriteLine("Hello, Worl!");
-        //}
+        static void Main(string[] args)
+        {
+            CommonElement.TestCommonElements(new int[] { 1, 2, 3, 0 }, new int[] { 2, 3, 4, 9 });
+            CommonElement.TestCommonElements(new int[] { 79, 8, 15 }, new int[] { 23, 79, 8 });
+            CommonElement.TestCommonElements(new int[] { 5, 10, 15, 20 }, new int[] { 10, 15, 25 });
+            CommonElement.TestCommonElements(new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 });
+            CommonElement.TestCommonElements(new int[] { }, new int[] { 1, 2, 3 });
+        }
 
 
         public static int[] MiddleValue(int[] array, int value)
