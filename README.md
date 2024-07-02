@@ -37,3 +37,10 @@ Adv-cc 05
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Challenges/Find-Duplicates/README.md)
 
 ---
+Adv-cc 06 - A
+
+### Challenge 06-A: Common Elements
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Challenges/Common-Elements/README.md)
+
+---
+
