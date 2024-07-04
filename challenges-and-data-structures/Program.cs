@@ -1,15 +1,16 @@
-﻿using challenges_and_data_structures.Challenges.Common_Elements;
+﻿using challenges_and_data_structures.Challenges.Reverse_Words;
 namespace challenges_and_data_structures
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            CommonElement.TestCommonElements(new int[] { 1, 2, 3, 0 }, new int[] { 2, 3, 4, 9 });
-            CommonElement.TestCommonElements(new int[] { 79, 8, 15 }, new int[] { 23, 79, 8 });
-            CommonElement.TestCommonElements(new int[] { 5, 10, 15, 20 }, new int[] { 10, 15, 25 });
-            CommonElement.TestCommonElements(new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 });
-            CommonElement.TestCommonElements(new int[] { }, new int[] { 1, 2, 3 });
+            Console.WriteLine(ReverseWords.ReverseWord("csharp is programming language")); 
+            Console.WriteLine(ReverseWords.ReverseWord("Reverse the words in this sentence"));
+            Console.WriteLine(ReverseWords.ReverseWord("challenges and data structures")); 
+            Console.WriteLine(ReverseWords.ReverseWord("oneword")); 
+            Console.WriteLine(ReverseWords.ReverseWord("")); 
+            Console.WriteLine(ReverseWords.ReverseWord("a b c d e f g")); 
         }
 
 
