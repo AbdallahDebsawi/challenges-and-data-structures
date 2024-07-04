@@ -43,4 +43,9 @@ Adv-cc 06 - A
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Challenges/Common-Elements/README.md)
 
 ---
+Adv-cc 06 - B
 
+### Challenge 6-B: Reverse Words
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Reverse-Words/challenges-and-data-structures/Challenges/Common-Elements/README.md)
+
+---
