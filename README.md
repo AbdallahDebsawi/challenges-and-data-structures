@@ -49,3 +49,9 @@ Adv-cc 06 - B
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Reverse-Words/challenges-and-data-structures/Challenges/Common-Elements/README.md)
 
 ---
+Data Structures Whiteboard Images
+
+### Linked List Implementation
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/LinkedList/README.md)
+
+---
