@@ -55,3 +55,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/LinkedList/README.md)
 
 ---
+### Linked List Remove Duplicates
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/LinkedList/RemoveDuplicates/README.md)
+
+---
