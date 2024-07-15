@@ -85,16 +85,37 @@ namespace challenges_and_data_structures.Data_Structures.LinkedList
             }
             Console.WriteLine("Null");
         }
-    }
-        public class Node
-    {
-        public int Data { get; set; }
-        public Node Next { get; set; }
 
-        public Node(int data)
+        public void RemoveDuplicates()
         {
-            Data = data;
-            Next = null;
+            Node current = Head;
+            while (current != null)
+            {
+                Node runner = current;
+                while (runner.Next != null)
+                {
+                    if (runner.Next.Data == current.Data)
+                    {
+                        runner.Next = runner.Next.Next;
+                    }
+                    else
+                    {
+                        runner = runner.Next;
+                    }
+                }
+                current = current.Next;
+            }
+        }
+        public class Node
+        {
+            public int Data { get; set; }
+            public Node Next { get; set; }
+
+            public Node(int data)
+            {
+                Data = data;
+                Next = null;
+            }
         }
     }
 }
