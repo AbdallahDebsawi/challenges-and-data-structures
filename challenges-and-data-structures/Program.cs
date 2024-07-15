@@ -1,36 +1,24 @@
 ﻿using challenges_and_data_structures.Data_Structures.LinkedList;
 namespace challenges_and_data_structures
-{
-    internal class Program
+{public class Program
     {
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
 
             list.Add(5);
-            list.Add(10);
             list.Add(20);
-            list.Add(30);
+            list.Add(20);
+            list.Add(10);
+            list.Add(5);
+            list.Add(10);
 
             Console.WriteLine("Initial list:");
-            list.PrintList();
-
-            Console.WriteLine("\nRemoving node with data 10:");
-            list.Remove(10);
             list.PrintList(); 
 
-            Console.WriteLine("\nChecking if list includes 20: " + list.Includes(20)); 
-            Console.WriteLine("Checking if list includes 40: " + list.Includes(40)); 
-
-            try
-            {
-                Console.WriteLine("\nTrying to remove node with data 40:");
-                list.Remove(40);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message); 
-            }
+            Console.WriteLine("\nRemoving duplicates:");
+            list.RemoveDuplicates();
+            list.PrintList(); 
 
         }
             public static int[] MiddleValue(int[] array, int value)

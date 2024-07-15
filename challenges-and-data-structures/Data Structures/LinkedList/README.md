@@ -1,7 +1,8 @@
 ### Data Structures Whiteboard Images
 
-### Challenge A: Array Reversal
-![Array Reversal Whiteboard](assets/LinkedList.png)
+### Linked List Implementation
+
+![Linked List Implementation Whiteboard](assets/LinkedList.png)
 ### Real Code
 ![Code](assets/Code.png)
 ### Main method
