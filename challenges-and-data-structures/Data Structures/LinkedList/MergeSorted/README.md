@@ -1,8 +1,8 @@
 ### Data Structures Whiteboard Images
 
-### Linked List Remove Duplicates
-![Remove Duplicates Whiteboard](assets/RemoveDuplicates.png)
+### Linked List Merge Sorted Lists
+![Merge Sorted Whiteboard](assets/MergeSorted-wb.png)
 ### Real Code
-![Code](assets/Remove-Duplicates.png)
+![Code](assets/MergeSortedList.png)
 ### Main method and Result
-![main](assets/main-.png)
+![main](assets/MergeSortedListMain.png)
