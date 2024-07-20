@@ -59,3 +59,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/LinkedList/RemoveDuplicates/README.md)
 
 ---
+### Linked List Merge Sorted Lists
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/LinkedList-Merge-Sorted/challenges-and-data-structures/Data%20Structures/LinkedList/MergeSorted/README.md)
+
+---
