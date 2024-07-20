@@ -111,6 +111,52 @@ namespace ChallengesTests
             Assert.Equal("Head -> 7 -> Null", GetListString(list));
         }
 
+   
+        //MergeSortedList
+        [Fact]
+        public void TestMergingWhenOneListIsEmpty()
+        {
+            LinkedList list1 = new LinkedList();
+            list1.Add(1);
+            list1.Add(3);
+            list1.Add(5);
+
+            LinkedList list2 = new LinkedList();
+
+            LinkedList mergedList = LinkedList.MergeSortedLists(list1, list2);
+
+            Assert.Equal("Head -> 1 -> 3 -> 5 -> Null", GetListString(mergedList));
+        }
+
+        [Fact]
+        public void TestMergingWhenBothListsAreEmpty()
+        {
+            LinkedList list1 = new LinkedList();
+            LinkedList list2 = new LinkedList();
+
+            LinkedList mergedList = LinkedList.MergeSortedLists(list1, list2);
+
+            Assert.Equal("Head -> Null", GetListString(mergedList));
+        }
+
+        [Fact]
+        public void TestMergingTwoSortedLists()
+        {
+            LinkedList list1 = new LinkedList();
+            list1.Add(5);
+            list1.Add(10);
+            list1.Add(15);
+
+            LinkedList list2 = new LinkedList();
+            list2.Add(2);
+            list2.Add(3);
+            list2.Add(20);
+
+            LinkedList mergedList = LinkedList.MergeSortedLists(list1, list2);
+
+            Assert.Equal("Head -> 2 -> 3 -> 5 -> 10 -> 15 -> 20 -> Null", GetListString(mergedList));
+        }
+
         private string GetListString(LinkedList list)
         {
             Node current = list.Head;
