@@ -4,23 +4,26 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            LinkedList list = new LinkedList();
+            LinkedList list1 = new LinkedList();
+            list1.Add(1);
+            list1.Add(3);
+            list1.Add(5);
 
-            list.Add(5);
-            list.Add(20);
-            list.Add(20);
-            list.Add(10);
-            list.Add(5);
-            list.Add(10);
+            LinkedList list2 = new LinkedList();
+            list2.Add(2);
+            list2.Add(4);
+            list2.Add(6);
 
-            Console.WriteLine("Initial list:");
-            list.PrintList(); 
+            LinkedList mergedList = LinkedList.MergeSortedLists(list1, list2);
 
-            Console.WriteLine("\nRemoving duplicates:");
-            list.RemoveDuplicates();
-            list.PrintList(); 
+            mergedList.PrintList();
 
         }
+
+
+
+
+
             public static int[] MiddleValue(int[] array, int value)
             {
                 int length = array.Length;

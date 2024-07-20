@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace challenges_and_data_structures.Data_Structures.LinkedList
 {
+    public class Node
+    {
+        public int Data { get; set; }
+        public Node Next { get; set; }
+
+        public Node(int data)
+        {
+            Data = data;
+            Next = null;
+        }
+    }
+
     public class LinkedList
     {
         public Node Head { get; private set; }
@@ -106,16 +118,40 @@ namespace challenges_and_data_structures.Data_Structures.LinkedList
                 current = current.Next;
             }
         }
-        public class Node
-        {
-            public int Data { get; set; }
-            public Node Next { get; set; }
 
-            public Node(int data)
+        public static LinkedList MergeSortedLists(LinkedList list1, LinkedList list2)
+        {
+            LinkedList mergedList = new LinkedList();
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+
+            while (current1 != null && current2 != null)
             {
-                Data = data;
-                Next = null;
+                if (current1.Data <= current2.Data)
+                {
+                    mergedList.Add(current1.Data);
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    mergedList.Add(current2.Data);
+                    current2 = current2.Next;
+                }
             }
+
+            while (current1 != null)
+            {
+                mergedList.Add(current1.Data);
+                current1 = current1.Next;
+            }
+
+            while (current2 != null)
+            {
+                mergedList.Add(current2.Data);
+                current2 = current2.Next;
+            }
+
+            return mergedList;
         }
     }
 }
