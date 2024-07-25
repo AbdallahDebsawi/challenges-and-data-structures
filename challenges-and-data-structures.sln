@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "challenges-and-data-structures", "challenges-and-data-structures\challenges-and-data-structures.csproj", "{6CBCE384-BDC2-44C8-979D-4EEEF689D5D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengesTests", "ChallengesTests\ChallengesTests.csproj", "{D48B2DB4-F0E0-484D-8001-A7DC665BFF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengesTests", "ChallengesTests\ChallengesTests.csproj", "{D48B2DB4-F0E0-484D-8001-A7DC665BFF7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,23 +1,44 @@
-﻿using challenges_and_data_structures.Data_Structures.LinkedList;
+﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
 namespace challenges_and_data_structures
 {public class Program
     {
         static void Main(string[] args)
         {
-            LinkedList list1 = new LinkedList();
-            list1.Add(1);
-            list1.Add(3);
-            list1.Add(5);
+            Stack stack = new Stack();
 
-            LinkedList list2 = new LinkedList();
-            list2.Add(2);
-            list2.Add(4);
-            list2.Add(6);
+            stack.Push(10);
+            stack.Push(5);
 
-            LinkedList mergedList = LinkedList.MergeSortedLists(list1, list2);
+            stack.PrintStack();
 
-            mergedList.PrintList();
+            int popped = stack.Pop();
+            Console.WriteLine("Popped: " + popped); 
 
+            int peeked = stack.Peek();
+            Console.WriteLine("Peeked: " + peeked); 
+
+            bool isEmpty = stack.IsEmpty();
+            Console.WriteLine("Is Empty: " + isEmpty);
+
+            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("-------------Queue Implementation----------------");
+            Console.WriteLine("-------------------------------------------------");
+
+            Queue queue = new Queue();
+
+            queue.Enqueue(10);
+            queue.Enqueue(5);
+
+            queue.PrintQueue(); 
+
+            int dequeued = queue.Dequeue();
+            Console.WriteLine("Dequeued: " + dequeued);
+
+            int queuePeeked = queue.Peek();
+            Console.WriteLine("Peeked: " + queuePeeked); 
+
+            bool isTheQueueEmpty = queue.IsEmpty();
+            Console.WriteLine("Is Empty: " + isTheQueueEmpty); 
         }
 
 
