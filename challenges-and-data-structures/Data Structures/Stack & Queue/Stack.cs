@@ -59,5 +59,17 @@ namespace challenges_and_data_structures.Data_Structures.Stack___Queue
             }
             Console.WriteLine();
         }
+        public override string ToString()
+        {
+            List<int> elements = new List<int>();
+            Node current = top;
+            while (current != null)
+            {
+                elements.Add(current.Data);
+                current = current.Next;
+            }
+            elements.Reverse();
+            return "Top -> " + string.Join(" -> ", elements);
+        }
     }
 }
