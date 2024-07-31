@@ -67,7 +67,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Stack-and-Queue-Implementation/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/README.md)
 
 ---
-### Stack And Queue Implementation
+### Stack & Queue: Reverse a Stack using Queue
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Reverse-Stack-Using-Queue/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/ReverseStackUsingQueue/README.md)
 
 ---
