@@ -1,44 +1,27 @@
 ﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
+using challenges_and_data_structures.Data_Structures.Stack___Queue.ReverseStackUsingQueue;
 namespace challenges_and_data_structures
 {public class Program
     {
         static void Main(string[] args)
         {
-            Stack stack = new Stack();
+            StackWithReverse stack = new StackWithReverse();
 
-            stack.Push(10);
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
             stack.Push(5);
 
-            stack.PrintStack();
+            Console.WriteLine($"stack before reversing\n{stack}"); 
+            stack.ReverseStack();
+            Console.WriteLine($"stack after reversing\n{stack}"); 
 
-            int popped = stack.Pop();
-            Console.WriteLine("Popped: " + popped); 
-
-            int peeked = stack.Peek();
-            Console.WriteLine("Peeked: " + peeked); 
-
-            bool isEmpty = stack.IsEmpty();
-            Console.WriteLine("Is Empty: " + isEmpty);
-
-            Console.WriteLine("-------------------------------------------------");
-            Console.WriteLine("-------------Queue Implementation----------------");
-            Console.WriteLine("-------------------------------------------------");
-
-            Queue queue = new Queue();
-
-            queue.Enqueue(10);
-            queue.Enqueue(5);
-
-            queue.PrintQueue(); 
-
-            int dequeued = queue.Dequeue();
-            Console.WriteLine("Dequeued: " + dequeued);
-
-            int queuePeeked = queue.Peek();
-            Console.WriteLine("Peeked: " + queuePeeked); 
-
-            bool isTheQueueEmpty = queue.IsEmpty();
-            Console.WriteLine("Is Empty: " + isTheQueueEmpty); 
+            stack.Push(6);
+            stack.Push(7);
+            Console.WriteLine($"stack before reversing\n{stack}"); 
+            stack.ReverseStack();
+            Console.WriteLine($"stack after reversing\n{stack}"); 
         }
 
 
