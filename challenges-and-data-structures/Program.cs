@@ -1,27 +1,30 @@
 ﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
+using challenges_and_data_structures.Data_Structures.Stack___Queue.DeleteMiddleElement;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.ReverseStackUsingQueue;
 namespace challenges_and_data_structures
 {public class Program
     {
         static void Main(string[] args)
         {
-            StackWithReverse stack = new StackWithReverse();
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
 
-            stack.Push(1);
-            stack.Push(2);
+            stack.Push(7);
+            stack.Push(14);
             stack.Push(3);
-            stack.Push(4);
+            stack.Push(8);
             stack.Push(5);
 
-            Console.WriteLine($"stack before reversing\n{stack}"); 
-            stack.ReverseStack();
-            Console.WriteLine($"stack after reversing\n{stack}"); 
+            Console.WriteLine(stack); 
+            stack.DeleteMiddle();
+            Console.WriteLine(stack); 
 
-            stack.Push(6);
-            stack.Push(7);
-            Console.WriteLine($"stack before reversing\n{stack}"); 
-            stack.ReverseStack();
-            Console.WriteLine($"stack after reversing\n{stack}"); 
+            stack.Push(2);
+            stack.Push(9);
+            stack.Push(11);
+            Console.WriteLine(stack); 
+            stack.DeleteMiddle();
+            Console.WriteLine(stack); 
+
         }
 
 
