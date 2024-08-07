@@ -8,7 +8,7 @@ namespace challenges_and_data_structures.Data_Structures.Stack___Queue
 {
     public class Stack
     {
-        private Node top;
+        public Node top;
 
         public Stack()
         {
