@@ -71,3 +71,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Reverse-Stack-Using-Queue/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/ReverseStackUsingQueue/README.md)
 
 ---
+### Stack Challenge: Delete Middle Element of a Stack
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/DeleteMiddleElement/README.md)
+
+---
