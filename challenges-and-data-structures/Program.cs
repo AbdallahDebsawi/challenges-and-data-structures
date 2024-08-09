@@ -1,29 +1,45 @@
 ﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.DeleteMiddleElement;
+using challenges_and_data_structures.Data_Structures.Stack___Queue.MinStack;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.ReverseStackUsingQueue;
 namespace challenges_and_data_structures
 {public class Program
     {
         static void Main(string[] args)
         {
-            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            MinStack minStack = new MinStack();
 
-            stack.Push(7);
-            stack.Push(14);
-            stack.Push(3);
-            stack.Push(8);
-            stack.Push(5);
+            // Push elements
+            minStack.Push(15);
+            minStack.Push(7);  
+            minStack.Push(12); 
+            minStack.Push(3);  
 
-            Console.WriteLine(stack); 
-            stack.DeleteMiddle();
-            Console.WriteLine(stack); 
+            minStack.PrintStack(); 
 
-            stack.Push(2);
-            stack.Push(9);
-            stack.Push(11);
-            Console.WriteLine(stack); 
-            stack.DeleteMiddle();
-            Console.WriteLine(stack); 
+            int min = minStack.GetMin(); 
+            Console.WriteLine("Min: " + min);
+
+            // Pop a node from the stack
+            int popped = minStack.Pop(); 
+            minStack.PrintStack();
+
+            min = minStack.GetMin(); 
+            Console.WriteLine("Min: " + min);
+
+            // Peek the top node
+            int peeked = minStack.Top();
+            Console.WriteLine("Top: " + peeked);
+
+            minStack.Push(2); 
+            minStack.PrintStack(); 
+
+            min = minStack.GetMin(); 
+            Console.WriteLine("Min: " + min);
+
+            // Check if the stack is empty
+            bool isEmpty = minStack.IsEmpty(); 
+            Console.WriteLine("IsEmpty: " + isEmpty);
 
         }
 
