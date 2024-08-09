@@ -75,3 +75,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/master/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/DeleteMiddleElement/README.md)
 
 ---
+### Min Stack
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Min-Stack/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/MinStack/README.md)
+
+---
