@@ -79,3 +79,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Min-Stack/challenges-and-data-structures/Data%20Structures/Stack%20%26%20Queue/MinStack/README.md)
 
 ---
+### Tree Implementation
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Tree-Implementation/challenges-and-data-structures/Data%20Structures/Trees/README.md)
+
+---
