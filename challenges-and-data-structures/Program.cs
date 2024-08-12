@@ -2,44 +2,57 @@
 using challenges_and_data_structures.Data_Structures.Stack___Queue.DeleteMiddleElement;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.MinStack;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.ReverseStackUsingQueue;
+using challenges_and_data_structures.Data_Structures.Trees;
 namespace challenges_and_data_structures
 {public class Program
     {
         static void Main(string[] args)
         {
-            MinStack minStack = new MinStack();
+            // Create a binary tree with root value 10
+            BinaryTree binaryTree = new BinaryTree(10);
 
-            // Push elements
-            minStack.Push(15);
-            minStack.Push(7);  
-            minStack.Push(12); 
-            minStack.Push(3);  
+            binaryTree.Insert(5);
+            binaryTree.Insert(15);
+            binaryTree.Insert(7);
 
-            minStack.PrintStack(); 
+            Console.WriteLine("PreOrder Traversal:");
+            binaryTree.PreOrderTraversal(binaryTree.Root);
+            Console.WriteLine();
 
-            int min = minStack.GetMin(); 
-            Console.WriteLine("Min: " + min);
+            Console.WriteLine("InOrder Traversal:");
+            binaryTree.InOrderTraversal(binaryTree.Root);
+            Console.WriteLine();
 
-            // Pop a node from the stack
-            int popped = minStack.Pop(); 
-            minStack.PrintStack();
+            Console.WriteLine("PostOrder Traversal:");
+            binaryTree.PostOrderTraversal(binaryTree.Root);
+            Console.WriteLine();
 
-            min = minStack.GetMin(); 
-            Console.WriteLine("Min: " + min);
+            // Print the tree structure
+            Console.WriteLine("Tree Structure:");
+            binaryTree.Print(binaryTree.Root);
 
-            // Peek the top node
-            int peeked = minStack.Top();
-            Console.WriteLine("Top: " + peeked);
+            Console.WriteLine();
+            Console.WriteLine("============BST===========");
+            BinarySearchTree bst = new BinarySearchTree(10);
 
-            minStack.Push(2); 
-            minStack.PrintStack(); 
+            bst.Add(5);
+            bst.Add(15);
+            bst.Add(7);
 
-            min = minStack.GetMin(); 
-            Console.WriteLine("Min: " + min);
+            bool contains = bst.Contains(7); 
+            Console.WriteLine($"Contains 7: {contains}");
 
-            // Check if the stack is empty
-            bool isEmpty = minStack.IsEmpty(); 
-            Console.WriteLine("IsEmpty: " + isEmpty);
+            bst.Remove(5);
+            contains = bst.Contains(5); 
+            Console.WriteLine($"Contains 5 after removal: {contains}");
+
+            Console.WriteLine("InOrder Traversal:");
+            bst.InOrderTraversal(bst.Root);
+            Console.WriteLine();
+
+            Console.WriteLine("Tree Structure:");
+            bst.Print(bst.Root);
+
 
         }
 
@@ -47,7 +60,7 @@ namespace challenges_and_data_structures
 
 
 
-            public static int[] MiddleValue(int[] array, int value)
+        public static int[] MiddleValue(int[] array, int value)
             {
                 int length = array.Length;
                 int midIndex = length / 2;
