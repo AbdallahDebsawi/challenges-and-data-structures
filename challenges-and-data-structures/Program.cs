@@ -8,52 +8,19 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            // Create a binary tree with root value 10
-            BinaryTree binaryTree = new BinaryTree(10);
+            BinaryTree Btree = new BinaryTree(4);
+            Btree.Root.Left = new TNode(8);
+            Btree.Root.Right = new TNode(7);
+            Btree.Root.Left.Left = new TNode(12);
+            Btree.Root.Left.Right = new TNode(9);
 
-            binaryTree.Insert(5);
-            binaryTree.Insert(15);
-            binaryTree.Insert(7);
+            Console.WriteLine("Original Tree:");
+            Btree.Print();
 
-            Console.WriteLine("PreOrder Traversal:");
-            binaryTree.PreOrderTraversal(binaryTree.Root);
-            Console.WriteLine();
+            Btree.MirrorTree(Btree.Root);
 
-            Console.WriteLine("InOrder Traversal:");
-            binaryTree.InOrderTraversal(binaryTree.Root);
-            Console.WriteLine();
-
-            Console.WriteLine("PostOrder Traversal:");
-            binaryTree.PostOrderTraversal(binaryTree.Root);
-            Console.WriteLine();
-
-            // Print the tree structure
-            Console.WriteLine("Tree Structure:");
-            binaryTree.Print(binaryTree.Root);
-
-            Console.WriteLine();
-            Console.WriteLine("============BST===========");
-            BinarySearchTree bst = new BinarySearchTree(10);
-
-            bst.Add(5);
-            bst.Add(15);
-            bst.Add(7);
-
-            bool contains = bst.Contains(7); 
-            Console.WriteLine($"Contains 7: {contains}");
-
-            bst.Remove(5);
-            contains = bst.Contains(5); 
-            Console.WriteLine($"Contains 5 after removal: {contains}");
-
-            Console.WriteLine("InOrder Traversal:");
-            bst.InOrderTraversal(bst.Root);
-            Console.WriteLine();
-
-            Console.WriteLine("Tree Structure:");
-            bst.Print(bst.Root);
-
-
+            Console.WriteLine("Mirrored Tree:");
+            Btree.Print();
         }
 
 
