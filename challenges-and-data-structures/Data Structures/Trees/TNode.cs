@@ -8,6 +8,8 @@ namespace challenges_and_data_structures.Data_Structures.Trees
 {
     public class TNode
     {
+        internal readonly TNode Parent;
+
         public int Value { get; set; }
 
         public TNode Left { get; set; }

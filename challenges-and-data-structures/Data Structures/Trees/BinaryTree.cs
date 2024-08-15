@@ -45,6 +45,35 @@ namespace challenges_and_data_structures.Data_Structures.Trees
                 }
             }
         }
+        // Mirror the binary tree
+        public void MirrorTree(TNode node)
+        {
+            if (node == null) return;
+
+            MirrorTree(node.Left);
+            MirrorTree(node.Right);
+
+            TNode temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+        }
+
+        // InOrder Traversal to return a list of node values
+        public List<int> InOrderTraversal(TNode node)
+        {
+            List<int> result = new List<int>();
+            InOrderTraversalHelper(node, result);
+            return result;
+        }
+
+        private void InOrderTraversalHelper(TNode node, List<int> result)
+        {
+            if (node == null) return;
+
+            InOrderTraversalHelper(node.Left, result);
+            result.Add(node.Value);
+            InOrderTraversalHelper(node.Right, result);
+        }
 
         public void PreOrderTraversal(TNode node)
         {
@@ -53,15 +82,6 @@ namespace challenges_and_data_structures.Data_Structures.Trees
             Console.Write(node.Value + "  ");
             PreOrderTraversal(node.Left);
             PreOrderTraversal(node.Right);
-        }
-
-        public void InOrderTraversal(TNode node)
-        {
-            if (node == null) return;
-
-            InOrderTraversal(node.Left);
-            Console.Write(node.Value + "  ");
-            InOrderTraversal(node.Right);
         }
 
         public void PostOrderTraversal(TNode node)
@@ -73,19 +93,32 @@ namespace challenges_and_data_structures.Data_Structures.Trees
             Console.Write(node.Value + "  ");
         }
 
-        public void Print(TNode node, string indent = "", bool isLeft = true)
+        public void Print()
         {
-            if (node == null)
-            {
-                Console.WriteLine($"{indent}*");
-                return;
-            }
-
-            Console.WriteLine($"{indent}{(isLeft ? "├──" : "└──")}{node.Value}");
-            indent += isLeft ? "│   " : "    ";
-            Print(node.Left, indent, true);
-            Print(node.Right, indent, false);
+            PrintTree(Root, "", true);
         }
 
-    }
+        private void PrintTree(TNode node, string indent, bool last)
+        {
+            if (node != null)
+            {
+                Console.Write(indent);
+                if (last)
+                {
+                    Console.Write("R----");
+                    indent += "     ";
+                }
+                else
+                {
+                    Console.Write("L----");
+                    indent += "|    ";
+                }
+
+                Console.WriteLine(node.Value);
+
+                PrintTree(node.Left, indent, false);
+                PrintTree(node.Right, indent, true);
+            }
+        }
+        }
 }
