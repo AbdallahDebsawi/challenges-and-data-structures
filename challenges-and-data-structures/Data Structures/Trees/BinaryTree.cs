@@ -58,8 +58,43 @@ namespace challenges_and_data_structures.Data_Structures.Trees
             node.Right = temp;
         }
 
-        // InOrder Traversal to return a list of node values
-        public List<int> InOrderTraversal(TNode node)
+        // Function to find the second maximum value in the binary tree
+        public int? FindSecondMax()
+        {
+            if (Root == null)
+                return null;
+
+            int? max = null;
+            int? secondMax = null;
+
+            FindSecondMaxHelper(Root, ref max, ref secondMax);
+
+            return secondMax;
+        }
+
+        private void FindSecondMaxHelper(TNode node, ref int? max, ref int? secondMax)
+        {
+            if (node == null)
+                return;
+
+            // In-order traversal: left, root, right
+            FindSecondMaxHelper(node.Left, ref max, ref secondMax);
+
+            if (max == null || node.Value > max)
+            {
+                secondMax = max;
+                max = node.Value;
+            }
+            else if (node.Value < max && (secondMax == null || node.Value > secondMax))
+            {
+                secondMax = node.Value;
+            }
+
+            FindSecondMaxHelper(node.Right, ref max, ref secondMax);
+        }
+
+    // InOrder Traversal to return a list of node values
+    public List<int> InOrderTraversal(TNode node)
         {
             List<int> result = new List<int>();
             InOrderTraversalHelper(node, result);
