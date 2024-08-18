@@ -8,19 +8,18 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(4);
-            Btree.Root.Left = new TNode(8);
-            Btree.Root.Right = new TNode(7);
-            Btree.Root.Left.Left = new TNode(12);
-            Btree.Root.Left.Right = new TNode(9);
+            // Create a binary tree
+            BinaryTree Btree = new BinaryTree(10);
+            Btree.Root.Left = new TNode(5);
+            Btree.Root.Right = new TNode(20);
+            Btree.Root.Left.Left = new TNode(3);
+            Btree.Root.Left.Right = new TNode(7);
+            Btree.Root.Right.Left = new TNode(15);
+            Btree.Root.Right.Right = new TNode(25);
 
-            Console.WriteLine("Original Tree:");
-            Btree.Print();
-
-            Btree.MirrorTree(Btree.Root);
-
-            Console.WriteLine("Mirrored Tree:");
-            Btree.Print();
+            int? secondMax = Btree.FindSecondMax();
+            Console.WriteLine("Second Maximum Value: " + (secondMax.HasValue ?
+                secondMax.Value.ToString() : "No second maximum found."));
         }
 
 
