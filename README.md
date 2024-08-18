@@ -87,4 +87,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Mirror-Tree/challenges-and-data-structures/Data%20Structures/Trees/MirrorTree/README.md)
 
 ---
+### Binary Tree - Second Maximum Value
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Second-Max-Value/challenges-and-data-structures/Data%20Structures/Trees/SecondMaxValue/README.md)
 
+---
