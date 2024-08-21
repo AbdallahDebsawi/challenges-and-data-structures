@@ -91,3 +91,7 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Second-Max-Value/challenges-and-data-structures/Data%20Structures/Trees/SecondMaxValue/README.md)
 
 ---
+### Binary Tree - Sum of leaf nodes
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Leaf-Sum/challenges-and-data-structures/Data%20Structures/Trees/LeafSum/README.md)
+
+---
