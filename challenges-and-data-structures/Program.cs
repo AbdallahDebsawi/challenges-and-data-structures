@@ -8,18 +8,26 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            // Create a binary tree
-            BinaryTree Btree = new BinaryTree(10);
-            Btree.Root.Left = new TNode(5);
-            Btree.Root.Right = new TNode(20);
+            BinaryTree Btree = new BinaryTree(9);
+
+            // Insert nodes
+            Btree.Root.Left = new TNode(8);
+            Btree.Root.Right = new TNode(12);
             Btree.Root.Left.Left = new TNode(3);
             Btree.Root.Left.Right = new TNode(7);
-            Btree.Root.Right.Left = new TNode(15);
-            Btree.Root.Right.Right = new TNode(25);
+            Btree.Root.Right.Left = new TNode(17);
+            Btree.Root.Right.Right = new TNode(23);
+            Btree.Root.Left.Left.Right = new TNode(4);
 
-            int? secondMax = Btree.FindSecondMax();
-            Console.WriteLine("Second Maximum Value: " + (secondMax.HasValue ?
-                secondMax.Value.ToString() : "No second maximum found."));
+            // Print the tree
+            Console.WriteLine("Tree Structure:");
+            Btree.Print();
+
+            // Calculate the sum of leaf nodes
+            int leafSum = Btree.SumOfLeafNodes();
+
+            // Print the result
+            Console.WriteLine($"\nSum of all leaf nodes: {leafSum}");
         }
 
 

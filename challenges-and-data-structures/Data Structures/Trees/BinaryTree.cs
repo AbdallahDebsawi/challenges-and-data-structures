@@ -71,7 +71,21 @@ namespace challenges_and_data_structures.Data_Structures.Trees
 
             return secondMax;
         }
+        public int SumOfLeafNodes()
+        {
+            return SumOfLeafNodes(Root);
+        }
 
+        private int SumOfLeafNodes(TNode node)
+        {
+            if (node == null)
+                return 0;
+
+            if (node.Left == null && node.Right == null)
+                return node.Value;
+
+            return SumOfLeafNodes(node.Left) + SumOfLeafNodes(node.Right);
+        }
         private void FindSecondMaxHelper(TNode node, ref int? max, ref int? secondMax)
         {
             if (node == null)
