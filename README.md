@@ -95,3 +95,6 @@ Data Structures Whiteboard Images
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Leaf-Sum/challenges-and-data-structures/Data%20Structures/Trees/LeafSum/README.md)
 
 ---
+### Binary Tree - Largest Value at Each Level
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Largest-Level-Value/challenges-and-data-structures/Data%20Structures/Trees/LargestLevelValue/README.md)
+
