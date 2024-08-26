@@ -45,6 +45,45 @@ namespace challenges_and_data_structures.Data_Structures.Trees
                 }
             }
         }
+        public List<int> LargestLevelValue()
+        {
+            List<int> largestValues = new List<int>();
+
+            if (Root == null)
+                return largestValues;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxAtLevel = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode currentNode = queue.Dequeue();
+                    if (currentNode.Value > maxAtLevel)
+                    {
+                        maxAtLevel = currentNode.Value;
+                    }
+
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+
+                largestValues.Add(maxAtLevel);
+            }
+
+            return largestValues;
+        }
         // Mirror the binary tree
         public void MirrorTree(TNode node)
         {
