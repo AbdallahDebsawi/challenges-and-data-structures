@@ -1,4 +1,5 @@
-﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
+﻿using challenges_and_data_structures.Data_Structures.LinkedList;
+//using challenges_and_data_structures.Data_Structures.Stack___Queue;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.DeleteMiddleElement;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.MinStack;
 using challenges_and_data_structures.Data_Structures.Stack___Queue.ReverseStackUsingQueue;
@@ -8,30 +9,28 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(5);
+            // Create a new linked list
+            LinkedList list = new LinkedList();
 
-            Btree.Root.Left = new TNode(13);
-            Btree.Root.Right = new TNode(7);
-            Btree.Root.Left.Left = new TNode(3);
-            Btree.Root.Left.Right = new TNode(7);
-            Btree.Root.Right.Left = new TNode(12);
-            Btree.Root.Right.Right = new TNode(20);
-            Btree.Root.Left.Left.Left = new TNode(1);
-            Btree.Root.Left.Left.Right = new TNode(4);
-            Btree.Root.Right.Left.Right = new TNode(11);
+            // Add nodes to the linked list
+            list.Head = new Node(1);
+            list.Head.Next = new Node(2);
+            list.Head.Next.Next = new Node(3);
+            list.Head.Next.Next.Next = new Node(4);
+            list.Head.Next.Next.Next.Next = new Node(5);
+            list.Head.Next.Next.Next.Next.Next = new Node(6);
 
-            // Call the LargestLevelValue method
-            List<int> largestValues = Btree.LargestLevelValue();
+            // Display the original list
+            Console.WriteLine("Original List:");
+            list.Display();
 
-            // Output the results to the console
-            Console.WriteLine("Largest values at each level:");
-            foreach (int value in largestValues)
-            {
-                Console.WriteLine(value);
-            }
+            // Rotate the list by k = 2
+            int k = 2;
+            list.RotateLeft(k);
 
-            int sumOfLargestValues = largestValues.Sum();
-            Console.WriteLine($"\nSum of largest values at each level: {sumOfLargestValues}");
+            // Display the rotated list
+            Console.WriteLine($"\nList after rotating by {k}:");
+            list.Display();
         }
 
 
