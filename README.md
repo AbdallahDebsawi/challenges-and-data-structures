@@ -98,3 +98,6 @@ Data Structures Whiteboard Images
 ### Binary Tree - Largest Value at Each Level
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Largest-Level-Value/challenges-and-data-structures/Data%20Structures/Trees/LargestLevelValue/README.md)
 
+---
+### Linked List - Rotate by K
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Linked-List-Rotate-K/challenges-and-data-structures/Data%20Structures/LinkedList/RotateLinkedList/README.md)
