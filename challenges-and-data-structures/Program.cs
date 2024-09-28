@@ -9,28 +9,16 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            // Create a new linked list
-            LinkedList list = new LinkedList();
+            BinaryTree Btree = new BinaryTree(2);        
+            Btree.Root.Left = new TNode(3);            
+            Btree.Root.Right = new TNode(5);           
+            Btree.Root.Left.Left = new TNode(4);         
+            Btree.Root.Right.Right = new TNode(6);      
+            Btree.Root.Left.Left.Right = new TNode(7);   
 
-            // Add nodes to the linked list
-            list.Head = new Node(1);
-            list.Head.Next = new Node(2);
-            list.Head.Next.Next = new Node(3);
-            list.Head.Next.Next.Next = new Node(4);
-            list.Head.Next.Next.Next.Next = new Node(5);
-            list.Head.Next.Next.Next.Next.Next = new Node(6);
-
-            // Display the original list
-            Console.WriteLine("Original List:");
-            list.Display();
-
-            // Rotate the list by k = 2
-            int k = 2;
-            list.RotateLeft(k);
-
-            // Display the rotated list
-            Console.WriteLine($"\nList after rotating by {k}:");
-            list.Display();
+            // Test the PrintRightView method
+            Console.WriteLine("Right View of the Binary Tree:");
+            Btree.PrintRightView();  
         }
 
 
