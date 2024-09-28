@@ -45,6 +45,43 @@ namespace challenges_and_data_structures.Data_Structures.Trees
                 }
             }
         }
+        // New method: Print the right view of the tree
+        public void PrintRightView()
+        {
+            if (Root == null) return;
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count; // Number of nodes at the current level
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode currentNode = queue.Dequeue();
+
+                    // Print the rightmost node (the last node in this level)
+                    if (i == levelSize - 1)
+                    {
+                        Console.Write(currentNode.Value + " ");
+                    }
+
+                    // Enqueue left and right children
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+            }
+
+            Console.WriteLine();
+        }
         public List<int> LargestLevelValue()
         {
             List<int> largestValues = new List<int>();
@@ -209,4 +246,5 @@ namespace challenges_and_data_structures.Data_Structures.Trees
             }
         }
         }
+
 }
