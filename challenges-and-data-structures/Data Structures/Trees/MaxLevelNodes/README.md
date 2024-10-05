@@ -1,11 +1,12 @@
 ### Data Structures Whiteboard Images
 
-### Binary Tree - Mirror Tree
+### Binary Tree - Level with Maximum Number of Nodes
 
-![Mirror Tree Whiteboard](assets/MirrorTree-WB.png)
-### Mirror Tree Code
-![BT](assets/MirrorTree.png)
 
-### Mirror Tree Main method
-![BT-main](assets/MirrorTree-main.png)
+![MaxLevelNodes Whiteboard](assets/FindMaxLevelNodes-wb.png)
+### Binary Tree - Level with Maximum Number of Nodes code
+![MaxLevelNodes](assets/FindMaxLevelNodes.png)
+
+### Binary Tree - Level with Maximum Number of Nodes Main method
+![MaxLevelNodes-main](assets/FindMaxLevelNodes-main.png)
 
