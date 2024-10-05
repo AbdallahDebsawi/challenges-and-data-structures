@@ -104,4 +104,6 @@ Data Structures Whiteboard Images
 ---
 ### Binary Tree - Print Right View
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Right-View/challenges-and-data-structures/Data%20Structures/Trees/RightViewPrint/README.md)
-
+---
+### Binary Tree - Level with Maximum Number of Nodes
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Max-Level-Nodes/challenges-and-data-structures/Data%20Structures/Trees/MaxLevelNodes/README.md)
