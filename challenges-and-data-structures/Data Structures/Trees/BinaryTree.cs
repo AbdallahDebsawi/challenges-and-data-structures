@@ -245,6 +245,50 @@ namespace challenges_and_data_structures.Data_Structures.Trees
                 PrintTree(node.Right, indent, true);
             }
         }
+        public int FindMaxLevelNodes()
+        {
+            if (Root == null) return -1; // Handle empty tree
+
+            Queue<TNode> queue = new Queue<TNode>();
+            queue.Enqueue(Root);
+
+            int maxNodes = 0;
+            int maxLevel = 0;
+            int currentLevel = 0;
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count; // Number of nodes at the current level
+
+                if (levelSize > maxNodes)
+                {
+                    maxNodes = levelSize;
+                    maxLevel = currentLevel;
+                }
+
+                // Process nodes at the current level
+                for (int i = 0; i < levelSize; i++)
+                {
+                    TNode currentNode = queue.Dequeue();
+
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+
+                currentLevel++;
+            }
+
+            return maxLevel;
         }
+
+    }
+    // Find the level with the maximum number of nodes
 
 }

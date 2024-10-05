@@ -9,16 +9,17 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(2);        
-            Btree.Root.Left = new TNode(3);            
-            Btree.Root.Right = new TNode(5);           
-            Btree.Root.Left.Left = new TNode(4);         
-            Btree.Root.Right.Right = new TNode(6);      
-            Btree.Root.Left.Left.Right = new TNode(7);   
+            BinaryTree Btree = new BinaryTree(1);
+            Btree.Root.Left = new TNode(2);
+            Btree.Root.Right = new TNode(3);
+            Btree.Root.Left.Left = new TNode(4);
+            Btree.Root.Left.Right = new TNode(5);
+            Btree.Root.Right.Right = new TNode(6);
+            Btree.Root.Left.Left.Left = new TNode(7);
 
-            // Test the PrintRightView method
-            Console.WriteLine("Right View of the Binary Tree:");
-            Btree.PrintRightView();  
+            int maxLevel = Btree.FindMaxLevelNodes(); 
+
+            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel);
         }
 
 
