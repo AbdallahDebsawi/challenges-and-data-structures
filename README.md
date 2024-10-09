@@ -107,3 +107,10 @@ Data Structures Whiteboard Images
 ---
 ### Binary Tree - Level with Maximum Number of Nodes
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Max-Level-Nodes/challenges-and-data-structures/Data%20Structures/Trees/MaxLevelNodes/README.md)
+
+---
+### Binary Tree - Minimum Depth
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Minimum-Depth/challenges-and-data-structures/Data%20Structures/Trees/MinimumDepth/README.md)
+
+
+
