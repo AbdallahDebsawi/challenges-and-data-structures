@@ -1,4 +1,5 @@
-﻿using System;
+﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -287,8 +288,40 @@ namespace challenges_and_data_structures.Data_Structures.Trees
 
             return maxLevel;
         }
+        public int FindMinimumDepth()
+        {
+            if (Root == null)
+            {
+                return 0;
+            }
 
+            // Use BFS approach to find the minimum depth
+            Queue<(TNode node, int level)> queue = new Queue<(TNode node, int level)>();
+            queue.Enqueue((Root, 1)); // Start from the root node at level 1
+
+            while (queue.Count > 0)
+            {
+                var (currentNode, currentLevel) = queue.Dequeue();
+
+                // If we find a leaf node, return its level
+                if (currentNode.Left == null && currentNode.Right == null)
+                {
+                    return currentLevel;
+                }
+
+                // Add the children to the queue for the next level
+                if (currentNode.Left != null)
+                {
+                    queue.Enqueue((currentNode.Left, currentLevel + 1));
+                }
+                if (currentNode.Right != null)
+                {
+                    queue.Enqueue((currentNode.Right, currentLevel + 1));
+                }
+            }
+
+            return 0; // If we don't find any leaf, which should never happen
+        }
     }
-    // Find the level with the maximum number of nodes
 
 }

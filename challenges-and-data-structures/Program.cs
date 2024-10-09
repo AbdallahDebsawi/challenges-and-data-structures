@@ -14,12 +14,9 @@ namespace challenges_and_data_structures
             Btree.Root.Right = new TNode(3);
             Btree.Root.Left.Left = new TNode(4);
             Btree.Root.Left.Right = new TNode(5);
-            Btree.Root.Right.Right = new TNode(6);
-            Btree.Root.Left.Left.Left = new TNode(7);
 
-            int maxLevel = Btree.FindMaxLevelNodes(); 
-
-            Console.WriteLine("The level with the maximum number of nodes is: " + maxLevel);
+            int minDepth = Btree.FindMinimumDepth();
+            Console.WriteLine($"Minimum depth of the binary tree: {minDepth}");
         }
 
 
