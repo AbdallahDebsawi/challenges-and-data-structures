@@ -1,4 +1,4 @@
-﻿using challenges_and_data_structures.Data_Structures.Stack___Queue;
+﻿//using challenges_and_data_structures.Data_Structures.Stack___Queue;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -83,6 +83,7 @@ namespace challenges_and_data_structures.Data_Structures.Trees
 
             Console.WriteLine();
         }
+
         public List<int> LargestLevelValue()
         {
             List<int> largestValues = new List<int>();
@@ -218,7 +219,31 @@ namespace challenges_and_data_structures.Data_Structures.Trees
             PostOrderTraversal(node.Right);
             Console.Write(node.Value + "  ");
         }
+        // Helper method to insert sorted values back into the tree
+        private void ConvertToBSTInOrder(TNode node, Queue<int> sortedValues)
+        {
+            if (node == null) return;
 
+            ConvertToBSTInOrder(node.Left, sortedValues);
+            node.Value = sortedValues.Dequeue();
+            ConvertToBSTInOrder(node.Right, sortedValues);
+        }
+
+        // Main method to convert binary tree to BST
+        public void ConvertToBST()
+        {
+            // Step 1: Collect all values in in-order traversal using provided InOrder method
+            List<int> values = InOrderTraversal(Root);
+
+            // Step 2: Sort the values
+            values.Sort();
+
+            // Step 3: Convert sorted values list to a queue for easy access
+            Queue<int> sortedValues = new Queue<int>(values);
+
+            // Step 4: Traverse tree in-order and assign sorted values to nodes
+            ConvertToBSTInOrder(Root, sortedValues);
+        }
         public void Print()
         {
             PrintTree(Root, "", true);

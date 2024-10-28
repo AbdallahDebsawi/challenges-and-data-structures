@@ -9,14 +9,25 @@ namespace challenges_and_data_structures
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(1);
-            Btree.Root.Left = new TNode(2);
-            Btree.Root.Right = new TNode(3);
-            Btree.Root.Left.Left = new TNode(4);
-            Btree.Root.Left.Right = new TNode(5);
+            BinaryTree Btree = new BinaryTree(40);
+            Btree.Root.Left = new TNode(10);
+            Btree.Root.Right = new TNode(50);
+            Btree.Root.Left.Left = new TNode(5);
+            Btree.Root.Left.Right = new TNode(30);
+            Btree.Root.Right.Right = new TNode(60);
+            Btree.Root.Left.Right.Left = new TNode(20);
+            Btree.Root.Left.Right.Right = new TNode(35);
 
-            int minDepth = Btree.FindMinimumDepth();
-            Console.WriteLine($"Minimum depth of the binary tree: {minDepth}");
+            Console.WriteLine("Original Binary Tree InOrder:");
+            List<int> originalValues = Btree.InOrderTraversal(Btree.Root);
+            Console.WriteLine(string.Join(" ", originalValues));
+
+            // Convert to BST
+            Btree.ConvertToBST();
+
+            Console.WriteLine("\nConverted Binary Search Tree InOrder:");
+            List<int> bstValues = Btree.InOrderTraversal(Btree.Root);
+            Console.WriteLine(string.Join(" ", bstValues));
         }
 
 
