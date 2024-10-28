@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Data Structures\LinkedList\MergeSorted\assets\" />
+    <Folder Include="Data Structures\Trees\BTreeToBST\assets\" />
   </ItemGroup>
 
 </Project>
