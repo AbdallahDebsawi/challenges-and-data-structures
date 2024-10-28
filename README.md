@@ -112,5 +112,8 @@ Data Structures Whiteboard Images
 ### Binary Tree - Minimum Depth
 [**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/Minimum-Depth/challenges-and-data-structures/Data%20Structures/Trees/MinimumDepth/README.md)
 
+---
+### Binary Tree to Binary Search Tree
+[**Challenge solution**](https://github.com/AbdallahDebsawi/challenges-and-data-structures/blob/BTree-to-BST/challenges-and-data-structures/Data%20Structures/Trees/BTreeToBST/README.md)
 
 
